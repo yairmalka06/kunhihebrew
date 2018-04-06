@@ -5,7 +5,7 @@ const YTDL = require("ytdl-core");
  
 const PREFIX = "!";
  
-var fortunes1 = [
+var fortunes = [
     "https://www.youtube.com/watch?v=RJs0FGj7Jc8&feature=youtu.be",
     "https://www.youtube.com/watch?v=wloynNXMnMk&feature=youtu.be",
     "https://www.youtube.com/watch?v=0vQUXFMVT3Y&feature=youtu.be",
@@ -125,10 +125,6 @@ bot.on("message", function(message){
                        message.channel.send("", {files: ["http://i.imgur.com/mxL9ejJ.jpg"]});
                 break;
            
-               
-                default:
-                    message.channel.sendMessage(".פקודה לא נכונה");
-               
         }
    
         return;
