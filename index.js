@@ -83,7 +83,7 @@ bot.on("message", function(message){
                              server.queue.push(fortunes[Math.floor(Math.random() * fortunes.length)]);
                
                             if(!message.guild.voiceConnection) message.member.voiceChannel.join().then(function(connection){
-                                play(connection, message);                            
+                            play(connection, message);                            
                             });
                         } else {
                           message.channel.sendMessage(".תנסה לשאול שוב");          
